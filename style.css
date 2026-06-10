@@ -1,39 +1,65 @@
 body{
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: black;
+	margin: 0;
 }
+
 #container{
 	width: 1000px;
-	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
+	height: 650px;
 	margin: 20px auto;	
+	background-image: url(cute.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 #calculator{
-	width: 320px;
-	height: 520px;
-	background-color: #eaedef;
+	width: 360px;
+	height: 580px;
+	background-color: #bbd5e7;
 	margin: 0 auto;
-	top: 20px;
+	top:30%
 	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	overflow: hidden;
 }
+
 #result{
-	height: 120px;
+	height: 100px;               
+    background-color: #d1dcde;   
+    margin: 20px 20px 10px 20px; /* Increased the 3rd number (bottom margin) to 25px to push buttons down */
+    border-radius: 8px;          
+    border: 2px solid #a3b2b5;   
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.2);
+    
+    /* Keeps giant numbers inside the screen */
+    overflow: hidden; 
 }
+
 #history{
 	text-align: right;
 	height: 20px;
-	margin: 0 20px;
-	padding-top: 20px;
+	margin: 0 15px;
+	padding-top: 15px;
 	font-size: 15px;
-	color: #919191;
+	color: #1a2324;              /* Crisp "digital ink" color */
+    font-family: monospace;
 }
 #output{
 	text-align: right;
-	height: 60px;
-	margin: 10px 20px;
-	font-size: 30px;
+	height: 45px;
+	margin: 5px 15px;
+	font-size: 32px;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 24px;             /* Dropped from 32px so long numbers fit beautifully */
+    white-space: nowrap;
 }
 #keyboard{
 	height: 400px;
@@ -41,12 +67,13 @@ body{
 .operator, .number, .empty{
 	width: 50px;
 	height: 50px;
-	margin: 15px;
+	margin: 12px;
 	float: left;
 	border-radius: 50%;
 	border-width: 0;
 	font-weight: bold;
 	font-size: 15px;
+
 }
 .number, .empty{
 	background-color: #eaedef;
@@ -62,21 +89,21 @@ body{
 }
 button:nth-child(4){
 	font-size: 20px;
-	background-color: #20b2aa;
+	background-color: #105a80;
 }
 button:nth-child(8){
 	font-size: 20px;
-	background-color: #ffa500;
+	background-color: #105a80;
 }
 button:nth-child(12){
 	font-size: 20px;
-	background-color: #f08080;
+	background-color: #105a80;
 }
 button:nth-child(16){
 	font-size: 20px;
-	background-color: #7d93e0;
+	background-color: #105a80;
 }
 button:nth-child(20){
 	font-size: 20px;
-	background-color: #9477af;
+	background-color: #105a80;
 }
