@@ -15,7 +15,8 @@ This is a simple calculator built using **HTML, CSS, and JavaScript**.
 - Git & GitHub
 
 ## 📸 Preview
-(Add screenshot here if you want)
+
+![Calculator Screenshot](preview.png)
 
 ## 🚀 How I used Git
 - git add .
